@@ -18,9 +18,9 @@ describe BonusDrink do
       quantity = 11
       expect(BonusDrink.total_count_for(quantity)).to eq 16
     end
-    xit '購入した本数が100本なら、飲めるのは0本' do
+    it '購入した本数が100本なら、飲めるのは0本' do
       quantity = 100
-      expect(BonusDrink.total_count_for(quantity)).to eq
+      expect(BonusDrink.total_count_for(quantity)).to eq 149
     end
   end
 end
